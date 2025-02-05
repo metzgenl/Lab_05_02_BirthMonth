@@ -14,7 +14,7 @@ public class BirthMonth {
             birthMonth = in.nextInt();
             in.nextLine();
 
-            // Calculate the Shipping Price and Total Price
+            // Check is BirthMonth is between 1 and 12 inclusive
             if (birthMonth >= 1 && birthMonth <= 12){
                 System.out.println("Your birth month is: " + birthMonth);
             }
@@ -22,6 +22,7 @@ public class BirthMonth {
                 System.out.println("You entered an incorrect month value: " + birthMonth);
             }
         }
+        //Invalid Entry
         else{
             incorrectInput = in.nextLine();
             System.out.println("\n" + incorrectInput + " is not a valid entry. Run the program again and enter a valid integer [1-12]!");
